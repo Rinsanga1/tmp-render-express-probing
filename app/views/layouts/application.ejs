@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title><%= title || "Thlengta" %></title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <script type="module" src="/node_modules/@hotwired/turbo/dist/turbo.es2017-esm.min.js"></script>
+</head>
+<body>
+  <nav>
+    <a href="/" data-turbo-action="advance">Home</a>
+    <a href="/show" data-turbo-action="advance">Show</a>
+    <a href="/new" data-turbo-action="advance">New</a>
+  </nav>
+
+  <main>
+    <%- include(`../${body}`) %>
+  </main>
+</body>
+</html>

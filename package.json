@@ -11,6 +11,8 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
+    "@hotwired/turbo": "^8.0.23",
+    "ejs": "^4.0.1",
     "express": "^5.2.1"
   }
 }
